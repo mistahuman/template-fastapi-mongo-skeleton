@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+body {
+	background-image:
+		radial-gradient(at 0% 99%, rgba(var(--color-surface-500) / 0.33) 0px, transparent 50%),
+		radial-gradient(at 100% 100%, rgba(var(--color-tertiary-500) / 0.33) 0px, transparent 50%);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

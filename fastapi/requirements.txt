@@ -1,0 +1,10 @@
+# app
+fastapi
+uvicorn
+motor
+python-dotenv
+pyaml
+# test
+pytest
+httpx
+requests

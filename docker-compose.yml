@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./fastapi
+    ports:
+      - "8000:8000"
+    networks:
+      - app_network
+  frontend:
+    build: ./ui
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
